@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Botiga</title>
+</head>
+<body>
+    <h1>Botiga</h1>
+
+    <form method="post" action="cistella_compra.php">
+        <p>Pa - 1,50 €
+        <input type="hidden" name="producte" value="pa">
+        Quantitat: <input type="number" name="quantitat" min="1" max="99" value="1" required>
+        <input type="submit" value="Afegir a la cistella"></p>
+    </form>
+
+    <form method="post" action="cistella_compra.php">
+        <p>Llet - 0,90 €
+        <input type="hidden" name="producte" value="llet">
+        Quantitat: <input type="number" name="quantitat" min="1" max="99" value="1" required>
+        <input type="submit" value="Afegir a la cistella"></p>
+    </form>
+
+    <p><a href="resum.php">Finalitzar compra</a></p>
+</body>
+</html>
